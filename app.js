@@ -76,8 +76,7 @@ function createTodoListItem(todo) {
 function completeTodo(event) {
   var checkbox = event.target;
   var todo = todos[checkbox.id];
-  console.log(todo);
-  todo.completed = true;
+  todo.completed = !todo.completed;
   var todoElement = document.getElementById('todo-' + todo.id);
   todoElement.classList.toggle('completed');
 }
