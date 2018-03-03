@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My ToDo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <section class="container">
+    <h1>My ToDo List</h1>
+    <!-- todo input is where we will be inputing the name of the todos. -->
+    <div class="input-wrapper">
+      <input type="text" id="todo-input" placeholder="Create a new ToDo!">
+      <button type="button" id="add-todo-button">Add ToDo</button>
+    </div>
+    <!-- todo-list will contain the list of todos. -->
+    <ul id="todo-list">
+      <li class="todo-item">
+        <input id="100" type="checkbox" onclick="completeTodo(this);">This is a test ToDo. Remove it from index.html!
+      </li>
+    </ul>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>

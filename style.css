@@ -1,0 +1,96 @@
+/** CS1-C SMASH SATURDAY ACADEMY.
+    JavaScript DOM Todo Project. */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: #dfe4ea;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Wrapper for centering the content. */
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 4em auto;
+  padding: 2em;
+  background: #FFF;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15), 
+              0 10px 10px rgba(0,0,0,0.19);
+}
+
+.container > h1 {
+  color: #474787;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Wrapper to hold input text and button. */
+.input-wrapper {
+  height: 42px;
+  margin: 2em auto;
+  width: 80%;
+}
+
+/* Text input styling. */
+#todo-input {
+  width: 80%;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 0.25em 1em;
+  color: #227093;
+  border: 1px solid #34ace0;
+}
+#todo-input:focus{
+    outline: none;
+    border: 1px solid #ff793f;
+}
+
+#add-todo-button {
+  width: 18%;
+  float: right;
+  height: 100%;
+  color: #FFF;
+  font-size: 1em;
+  border: 1px solid #227093;
+  background: #34ace0;
+}
+
+/* Styling for UL. */
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for todo list items. */
+.todo-item {
+  font-size: 1.5em;
+  color: #f5f6fa;
+  background: #ff9365;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  font-weight: 300;
+}
+
+/* Crosses off text. Will be added to elements when checkbox is checked. */
+.completed {
+  text-decoration: line-through;
+}
+
+/* Minor styling for checkboxes next to todos. */
+.todo-item > input[type='checkbox'] {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 1.5em;
+}
